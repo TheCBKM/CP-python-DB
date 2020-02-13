@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <title>Index</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark justify-content-between"">
+		<a class=" navbar-brand" href="#" style="color:white;">Submit_IT<br>
+    <div style="font-size: small;">OOAD</div>
+    </a>
+    <a style="font-size: xx-large; color: white;" href="https://www.cbkm.in/" target="_blank">CBKM</a>
+  </nav>
+  <br />
+  <center>
+    <div class="container px-lg-5">
+      <div class="shadow-lg p-3 mb-5 bg-white rounded">
+
+        <div class="row mx-lg-n5">
+          <div class="col py-3 px-sm-3 bg-light"><img src="prakhar.png" alt="..." height="150px" width="150px"
+              style="border-radius:50%;">
+          </div>
+          <div class="col py-3 px-lg-7 bg-light" style="text-align: justify;">
+            <h2>Prakhar Mangal</h2>
+            <h4>Enrollment No. : EN17CS301182</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </center>
+  <br />
+  <br />
+
+  <div class="container">
+    <div class="shadow-lg p-3 mb-5 bg-white rounded">
+      <h3>PRACTICALS:</h3>
+      <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Index</th>
+            <th scope="col">Date</th>
+            <th scope="col">Show</th>
+          </tr>
+        </thead>
+        <tbody id="plist">
+         
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+
+    var practical = [
+
+      {
+        practicalname: "What is System Software and Application Software along with examples and usabilities?",
+        date: '14/02/2020',
+        link: 'practical.html#p1'
+      },
+      {
+        practicalname: 'Synopsis of Project - Health Tracker',
+        date: '14/02/2020',
+        link: 'practical.html#p2'
+
+      }]
+
+    practical.map((p, i) => {
+      var mypractical = document.getElementById('plist')
+      mypractical.innerHTML += `<tr>
+      <th scope="row">${i + 1}</th>
+      <td>${p.practicalname}</td>
+      <td>${p.date}</td>
+      <td><a class="btn btn-primary" href="${window.location.pathname}${p.link}" target="_blank" >See</a></td>
+    </tr>`
+    })
+
+
+  </script>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
